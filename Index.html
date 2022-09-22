@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCB storegit </title>
-    <link rel="stylesheet" href="./style.css">
+    <title>UCB newspaper </title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./style.css">
+
+    <head>
+        <style>
+        #dinosaurio {
+            position: relative;
+            cursor: pointer;
+        }
+        </style>
+    </head>
 </head>
 <body>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
@@ -46,7 +53,73 @@
             </div>
         </div>
     </nav>
-    <header>
+
+    
+
+        <img id="dinosaurio" style="padding-top: 50px;" src="./MEDIA/dino.gif">
+        <br>
+        <center>
+            <button  style="background-color: #024459; color: white; border-color: white;" class="btn btn-info btn-lg btn-responsive" id="enviar1" onClick="quehoraes()"> <span class="glyphicon glyphicon-search"></span>¿Qué hora es?</button>
+        </center>
+        <br>
+        <section class="py-5">
+            <div class="container">
+                <h1 class="fw-light">Sobre Nosotros</h1>
+                <p class="lead">
+                    Te damos la bienvenida a UCB NEWSPAPER ¿Quieres saber más sobre nosotros? ¡Aquí va nuestra historia!
+                    <br><br>
+                    El periódico es uno de los medios masivos de comunicación más importante de la actualidad, especialmente en los últimos años que, con la asimilación de los soportes tecnointelógicos de internet ha sabido cosechar aún más seguidores.
+                    <br><br>
+                    Es innegable que el periódico es una de las formas de comunicación más importante que existe en la actualidad. Esto es así ya que la presencia de información de todo tipo los hace a los medios de comunicación acreedores de la posibilidad de difundir las informaciones o datos que más convenientes crean, sin que esto necesariamente implique que se falte a la verdad. Los periódicos son además una de las formas más accesibles que tiene la mayor parte de la sociedad de acceder a esa información que de otra manera sólo sería manejada por funcionarios políticos o intelectuales.
+                </p>
+            </div>
+        </section>
+
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="./MEDIA/4.png" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">NUESTRO PERIÓDICO DIGITAL</h1>
+                    <p>Un periódico digital o periódico en línea (o noticias electrónicas o publicación de noticias electrónicas) es la versión en línea de un periódico, ya sea como una publicación independiente o como la versión en línea de una publicación periódica impresa.
+                        <br><br>
+                        Estar en línea creó más oportunidades para los periódicos, como competir con el periodismo de transmisión en la presentación de noticias de última hora de una manera más oportuna. Muchos en la industria periodística también consideran que la credibilidad y el fuerte reconocimiento de marca de los periódicos bien establecidos, y las estrechas relaciones que tienen con los anunciantes, fortalecen sus posibilidades de supervivencia. El alejamiento del proceso de impresión también puede ayudar a reducir los costos.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="testimonials text-center bg-light">
+            <br>
+            <div class="container">
+                <h2 class="mb-5">Nuestros escritores</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="./MEDIA/persona1.png" alt="..." />
+                            <h5>Margaret E.</h5>
+                            <p class="font-weight-light mb-0">Escritor 001</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="./MEDIA/persona2.png" alt="..." />
+                            <h5>Fred S.</h5>
+                            <p class="font-weight-light mb-0">Escritor 002</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="./MEDIA/persona3.png" alt="..." />
+                            <h5>Sarah W.</h5>
+                            <p class="font-weight-light mb-0">Escritor 003</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+
 
 
 
@@ -106,3 +179,23 @@
 
 </body>
 </html>
+
+<script>
+    dinosaurio.onclick = function() {
+        let start = Date.now();
+        let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+        dinosaurio.style.left = timePassed / 5 + 'px';
+        if (timePassed > 4200) clearInterval(timer);
+        }, 20);
+    }
+
+    function quehoraes(){
+        var quehora=new Date();
+        var hora=quehora.getHours();
+        var minutos=quehora.getMinutes();
+        var segundos=quehora.getSeconds();
+        alert("Bienvenido a UCB newspaper\n\nSon las  : "+ hora + " : " +minutos + " : " + segundos);
+    }
+
+</script>
