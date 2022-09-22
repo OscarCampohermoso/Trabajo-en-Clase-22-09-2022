@@ -9,7 +9,7 @@ En este proyecto es un periodico online con JavaScript
 - Sergio: Deportes
 - - Funciones:
 - - - limitChar(parametro): Permite la limitación de carácteres para los comentarios y la cantidad de carácteres restantes.
-- - - infoComentario: Muestra la información de la hora y fecha a la que se hizo el comentario.
+- - - infoComentario: Muestra la información de la hora y fecha a la que se hizo el comentario.-+
 - Oscar: Politica
 - - Funciones:
 - Sebastian: Farandula
