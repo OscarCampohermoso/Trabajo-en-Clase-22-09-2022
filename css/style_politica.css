@@ -1,0 +1,15 @@
+.blog .blog-img{
+    background-image: url(../img/carousel2.jpeg);
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog .blog-img2{
+    background-image: url(../img/carousel3.jpg);
+    width: 50%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
