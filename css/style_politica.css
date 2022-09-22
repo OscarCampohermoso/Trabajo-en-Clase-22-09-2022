@@ -1,5 +1,5 @@
 .blog .blog-img{
-    background-image: url(../img/carousel2.jpeg);
+    background-image: url(../MEDIA/politica_img/putin_enojado.jpg);
     width: 50%;
     height: 400px;
     background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .blog .blog-img2{
-    background-image: url(../img/carousel3.jpg);
+    background-image: url(../MEDIA/politica_img/añez_murillo_lopez.jpg);
     width: 50%;
     height: 600px;
     background-size: cover;
