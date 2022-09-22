@@ -19,5 +19,7 @@ En este proyecto es un periodico online con JavaScript
 - - Funciones:
 - Carlos: Economía
 - - Funciones:
+- - - funciones() agrega texto al precionar sobre una imagen.
+- - - funciones2()  acerca una imagen al precionar sobre una.
 
 Todos deben tener dos funciones de JavaScript De preferencia manipular el DOM con estas funciones, Los estilos se realizaran con Bootstrap
