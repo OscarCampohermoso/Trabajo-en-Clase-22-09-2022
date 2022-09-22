@@ -8,6 +8,8 @@ En este proyecto es un periodico online con JavaScript
 - - - quehoraes(): Permite saber la hora del ordenador mediante un alert. 
 - Sergio: Deportes
 - - Funciones:
+- - - limitChar(parametro): Permite la limitación de carácteres para los comentarios y la cantidad de carácteres restantes.
+- - - infoComentario: Muestra la información de la hora y fecha a la que se hizo el comentario.
 - Oscar: Politica
 - - Funciones:
 - Sebastian: Farandula
