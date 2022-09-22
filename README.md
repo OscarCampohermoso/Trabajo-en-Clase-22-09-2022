@@ -12,6 +12,9 @@ En este proyecto es un periodico online con JavaScript
 - - - infoComentario: Muestra la información de la hora y fecha a la que se hizo el comentario.
 - Oscar: Politica
 - - Funciones:
+- - -  $("#putin_new").click: Permite lanzar un alert con más informacion de la noticia.
+- - -  $("#añez_new").click: Permite lanzar un alert con más informacion de la noticia.
+- - -  makeBigger() y returnToOriginalSize(): Hace la imagen más grande y la devuelve a su tamaño noramal.
 - Sebastian: Farandula
 - - Funciones:
 - Carlos: Economía
